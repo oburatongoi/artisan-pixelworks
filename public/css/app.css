@@ -1,0 +1,302 @@
+body {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.artisan-banner h1,
+.main-nav,
+.logo {
+  font-family: 'Rajdhani', sans-serif;
+}
+.logo a {
+  /*color: inherit;*/
+  /*color: rgba(255, 0, 0, 0.5);
+  color: rgba(153, 153, 153, 0.5);*/
+}
+.logo-main,
+a.logo-main  {
+  font-size: 2em;
+  line-height: 1em;
+  margin: 0;
+  font-weight: 300;
+  color: rgba(255, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 1);
+}
+.logo-main span {
+ font-weight: 600;
+ font-size: 1.5em;
+ letter-spacing: -0.04em;
+ color: white;
+ text-shadow: 1px 1px 0.5px rgba(0,0,0,0.8);
+}
+.logo-tagline {
+ margin: 0;
+ color: rgba(255, 255, 255, 0.9);
+ text-shadow: 1px 1px 0.5px rgba(0,0,0,0.7);
+ font-size: 0.9em;
+ font-weight: 600;
+ letter-spacing: 0.5px;
+}
+.logo-tagline a {
+  color: rgba(255, 255, 255, 1);
+}
+.logo-tagline a:hover {
+  color: rgba(255, 0, 0, 0.8);
+}
+.wrapper {
+ margin: 0 auto;
+}
+.paragraph {
+   background: rgba(0, 0, 0, 0.3);
+   color: white;
+   /*color: rgba(255, 0, 0, 0.8);*/
+   padding: 20px 30px;
+   border-radius: 3px;
+}
+.welcome-text {
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1em;
+  text-shadow: 1px 1px 0.5px rgba(0,0,0,0.8);
+  text-align: center;
+  font-family: 'Rajdhani', sans-serif;
+}
+.text-shadow {
+  text-shadow: 1px 1px 0.5px rgba(0,0,0,0.8);
+}
+.text-shadow-light {
+  text-shadow: 1px 1px 0.5px rgba(255,255,255,0.8);
+}
+#bg-vid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+#bg-vid-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.bg-vid-outer {
+  position: relative;
+}
+.artisan-banner {
+  padding: 2em 1em;
+  margin-bottom: 1em;
+  /*background-color: rgba(255, 0, 0, 0.2);*/
+  position: relative;
+  overflow: hidden;
+}
+.artisan-banner h1 {
+  color: rgba(255, 0, 0, 0.5);
+  text-shadow: 1px 1px 0.5px rgba(0,0,0,0.3);
+}
+.artisan-banner p {
+  /*background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 10px;
+  color: white;
+  text-shadow: 1px 1px 0.5px rgba(0,0,0,0.8);
+  font-weight: 600;*/
+  color: rgba(255, 0, 0, 0.8);
+}
+.philosophy-banner {
+  margin-top: 10%;
+  margin: 4em 0 5em;
+}
+#bg-img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    /*background-color: rgba(255, 0, 0, 0.1);*/
+    background-size: cover;
+}
+#bg-dark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -99;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    background-size: cover;
+}
+ul{
+ list-style: none;
+}
+a {
+ text-decoration: none;
+ color: inherit;
+}
+.main-nav {
+ padding: 0;
+}
+.main-nav li {
+ display: inline-block;
+ margin: 0 10px;
+ font-weight: 600;
+ font-size: 0.8em;
+ color: rgba(153, 153, 153, 1);
+}
+.text-center {
+ text-align: center;
+}
+/*.main-nav li:first-child {
+ margin-left: 0;
+}
+.main-nav li:last-child {
+ margin-right: 0;
+}*/
+.main-nav a:hover,
+.main-nav .selected a {
+ border-bottom: 3px solid rgba(255, 0, 0, 0.5);
+}
+.main-nav a {
+ padding-bottom: 3px;
+ -webkit-transition-duration: 200ms;
+  -moz-transition-duration: 200ms;
+  -o-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+.bold {
+ font-weight: 600;
+}
+.nav-link-grey a {
+  color: rgba(153, 153, 153, 1);
+}
+.nav-link-white a {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 1px 1px 0.5px rgba(0,0,0,0.7);
+}
+.duration {
+ -webkit-transition-duration: 300ms;
+  -moz-transition-duration: 300ms;
+  -o-transition-duration: 300ms;
+  transition-duration: 300ms;
+}
+.copyright {
+ font-size: 0.8em;
+ /*color: rgba(153, 153, 153, 1);*/
+ color: rgba(255, 255, 255, 1);
+ text-shadow: 1px 1px 0.5px rgba(0,0,0,0.7);
+}
+hr {
+background-color:rgba(153, 153, 153, 1);
+border-width:0;
+color:rgba(153, 153, 153, 1);
+height:2px;
+line-height:0;
+page-break-after:always;
+text-align:center;
+width:100%;
+}
+.project-preview {
+  margin-bottom: 30px;
+}
+.project-preview-img img {
+  width: 100%;
+}
+.project-preview-header h3 {
+  color: rgba(255, 0, 0, 0.5);
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
+}
+.project-preview-header a {
+  color: rgba(153, 153, 153, 1);
+}
+.project-preview-info {
+  background: rgba(255, 0, 0, 0.1);
+  padding: 10px;
+}
+.project-preview-tags {
+  padding: 0;
+  margin: 0;
+}
+.project-preview-tags li {
+  display: inline-block;
+  padding: 2px 5px;
+  background: rgba(255, 0, 0, 0.1);
+  margin-bottom: 5px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: rgba(255, 0, 0, 0.5);
+}
+
+
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
