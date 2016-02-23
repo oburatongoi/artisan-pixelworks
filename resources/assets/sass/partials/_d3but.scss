@@ -1,0 +1,56 @@
+/*************** FONT-WEIGHT ***************
+*
+* Declared using the convention fw-x, where x represents the font weight divided by 100. For example fw-300 represents font-weight: 300;
+* Values range from 3 to 9;
+* fw-bold represents font-weight: bold;
+*
+*/
+.fw-300{font-weight:300}.fw-400{font-weight:400}.fw-500{font-weight:500}.fw-600{font-weight:600}.fw-700{font-weight:700}.fw-800{font-weight:800}.fw-900{font-weight:900}.fw-bold{font-weight:700}
+/*************** FONT-SIZE ***************
+*
+* Declared using the convention fs-x, where x is a two digit number ranging from 06 to 25. The actual font size declaration is the number divided by 10, so that fs-06 represents font-size: 0.6em;
+* Min value: 06
+* Max value: 25
+* Use fs-30 and fs-40 for really huge font sizes
+*
+*/
+.fs-06{font-size:.6em}.fs-07{font-size:.7em}.fs-08{font-size:.8em}.fs-09{font-size:.9em}.fs-10{font-size:1em}.fs-11{font-size:1.1em}.fs-12{font-size:1.2em}.fs-13{font-size:1.3em}.fs-14{font-size:1.4em}.fs-15{font-size:1.5em}.fs-16{font-size:1.6em}.fs-17{font-size:1.7em}.fs-18{font-size:1.8em}.fs-19{font-size:1.9em}.fs-20{font-size:2em}.fs-21{font-size:2.1em}.fs-22{font-size:2.2em}.fs-23{font-size:2.3em}.fs-24{font-size:2.4em}.fs-25{font-size:2.5em}.fs-30{font-size:3em}.fs-40{font-size:4em}
+.italic {
+    font-style: italic;
+}
+/*************** PADDING ***************
+*
+* Declared using the convention p-x, where x corresponds to the desired number of pixels of padding;
+* Right padding is uses rp-x;
+* Left padding uses lp-x;
+* Top padding is uses tp-x;
+* Bottom padding uses bp-x;
+* Note: values us x range from 5 to 40 in increments of 5. Eg 5, 10, 15 etc;
+* Use p-0 for a padding value of 0;
+* sp-20 gives a side padding of 20px;
+*
+*/
+.p-0{padding:0}.p-3{padding:3px}.p-5{padding:5px}.p-10{padding:10px}.p-15{padding:15px}.p-20{padding:20px}.p-25{padding:25px}.p-30{padding:30px}.p-35{padding:35px}.p-40{padding:40px}.tp-5{padding-top:5px}.tp-10{padding-top:10px}.tp-15{padding-top:15px}.tp-20{padding-top:20px}.tp-25{padding-top:25px}.tp-30{padding-top:30px}.tp-35{padding-top:35px}.tp-40{padding-top:40px}.bp-5{padding-bottom:5px}.bp-10{padding-bottom:10px}.bp-15{padding-bottom:15px}.bp-20{padding-bottom:20px}.bp-25{padding-bottom:25px}.bp-30{padding-bottom:30px}.bp-35{padding-bottom:35px}.bp-40{padding-bottom:40px}.rp-5{padding-right:5px}.rp-10{padding-right:10px}.rp-15{padding-right:15px}.rp-20{padding-right:20px}.rp-25{padding-right:25px}.rp-30{padding-right:30px}.rp-35{padding-right:35px}.rp-40{padding-right:40px}.lp-5{padding-left:5px}.lp-10{padding-left:10px}.lp-15{padding-left:15px}.lp-20{padding-left:20px}.lp-25{padding-left:25px}.lp-30{padding-left:30px}.lp-35{padding-left:35px}.lp-40{padding-left:40px}.sp-20{padding-left:20px;padding-right:20px}
+/*************** MARGIN ***************
+*
+* Declared using the convention m-x, where x corresponds to the desired number of pixels of margin;
+* Right margin is uses rm-x;
+* Left margin uses lm-x;
+* Top margin is uses tm-x;
+* Bottom margin uses bm-x;
+* Note: values of x range are 3, 5, 10, 20, 30, and 40;
+* Use m-0 for a margin value of 0;
+* sm-20 gives a side margin of 20px;
+*
+*/
+.m-0{margin:0}.m-3{margin:3px}.m-5{margin:5px}.m-10{margin:10px}.m-15{margin:15px}.m-20{margin:20px}.m-30{margin:30px}.m-40{margin:40px}.tm-3{margin-top:3px}.tm-5{margin-top:5px}.tm-10{margin-top:10px}.tm-15{margin-top:15px}.tm-20{margin-top:20px}.tm-30{margin-top:30px}.tm-40{margin-top:40px}.tm-60{margin-top:60px}.bm-3{margin-bottom:3px}.bm-5{margin-bottom:5px}.bm-10{margin-bottom:10px}.bm-15{margin-bottom:15px}.bm-20{margin-bottom:20px}.bm-30{margin-bottom:30px}.bm-40{margin-bottom:40px}.rm-3{margin-right:3px}.rm-5{margin-right:5px}.rm-10{margin-right:10px}.rm-15{margin-right:15px}.rm-20{margin-right:20px}.rm-30{margin-right:30px}.rm-40{margin-right:40px}.lm-3{margin-left:3px}.lm-5{margin-left:5px}.lm-10{margin-left:10px}.lm-15{margin-left:15px}.lm-20{margin-left:20px}.lm-30{margin-left:30px}.lm-40{margin-left:40px}.sm-20{margin-left:20px;margin-right:20px}
+/*************** BORDER-RADIUS ***************
+*
+* Declared using the convention br-x, where x corresponds to the desired number of pixels of border-radius;
+* Top border-radius is uses tbr-x;
+* Bottom border-radius uses bbr-x;
+* Note: values of x range are 2, 3, 5, and 10;
+* round represents a border-radius of 50%;
+*
+*/
+.br-2{border-radius:2px}.br-3{border-radius:3px}.br-5{border-radius:5px}.br-10{border-radius:10px}.round{border-radius:50%}.tbr-2{border-top-right-radius:2px;border-top-left-radius:2px}.tbr-3{border-top-right-radius:3px;border-top-left-radius:3px}.tbr-5{border-top-right-radius:5px;border-top-left-radius:5px}.tbr-10{border-top-right-radius:10px;border-top-left-radius:10px}.bbr-2{border-bottom-right-radius:2px;border-bottom-left-radius:2px}.bbr-3{border-bottom-right-radius:3px;border-bottom-left-radius:3px}.bbr-5{border-bottom-right-radius:5px;border-bottom-left-radius:5px}.bbr-10{border-bottom-right-radius:10px;border-bottom-left-radius:10px}

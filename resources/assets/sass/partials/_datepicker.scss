@@ -1,0 +1,101 @@
+.datepicker {
+
+}
+
+.edit-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.8);
+  @include outer-container(100%);
+  .edit-container {
+    position: relative;
+    background: rgba(255,255,255,1);
+    @include outer-container(50%);
+    @include pad(0);
+    @include pad(2em);
+    margin-top: 5%;
+    @include border-color(tint($base-border-color, 40%));
+    @include border-style(solid);
+    @include border-width(1px);
+
+    .list-title {
+      @include pad(0);
+      @include margin(0 0 6vh);
+    }
+
+    input.title,
+    input.link-to,
+    textarea.description {
+      @include fill-parent;
+    }
+    textarea.description {
+      @include pad(1vh 0);
+      @include margin(2vh 0 0);
+      @include border-color(tint($base-border-color, 40%) null null null);
+      @include border-style(solid 0 0 0);
+      @include border-width(1px 0 0 0);
+      @include border-top-radius(0);
+    }
+    input.owner,
+    input.deadline {
+      display: block;
+      width: 49%;
+      @include pad(2vh 1em);
+      @include margin(0 0 3vh);
+      @include border-color(tint($base-border-color, 40%));
+      @include border-style(solid);
+      @include border-width(1px);
+    }
+    input.title{
+      outline: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      font-size:1.2em;
+      // color: shade($app-color, 2%);
+      font-family: 'Oxygen', sans-serif;
+      font-weight: 300;
+      @include pad(1vh 0);
+      @include margin(0 0 3vh);
+      @include border-color(null null tint($base-border-color, 40%) null);
+      @include border-style(0 0 solid 0);
+      @include border-width(0 0 1px 0);
+      @include border-bottom-radius(0);
+    }
+    input.owner{
+      float: left;
+      padding-left: 2.5em;
+      background-image: url('/img/user.svg');
+      background-size: 1em;
+      background-repeat: no-repeat;
+      background-position: 0.75em center;
+    }
+    input.link-to{
+      @include pad(2vh 1em);
+    }
+    input.deadline{
+      float: right;
+      padding-left: 2.5em;
+      background-image: url('/img/calendar.svg');
+      background-size: 1em;
+      background-repeat: no-repeat;
+      background-position: 0.75em center;
+    }
+  }
+}
+.close-overlay-icon {
+  display: inline-block;
+  svg {
+    height: 1.5em;
+  }
+  &:hover path {
+    fill: $primary-color;
+  }
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  cursor: pointer;
+  z-index: 1000;
+}

@@ -1,0 +1,50 @@
+// All mixins and global project variables
+
+@import "_datepicker";
+@import "_pikaday";
+@import "_header";
+@import "_d3but";
+@import "_previews";
+@import "_pages";
+
+html,
+body {
+  height: 100%;
+  @include margin(0);
+  @include padding(0);
+  @include body-font();
+}
+
+.wrapper {
+  @include outer-container(100%);
+  @include margin(0);
+  @include padding(0);
+  height: 100%;
+  position: relative;
+}
+.inner-wrapper {
+  @include span-columns(12);
+  @include margin(0);
+  @include padding(0);
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.artisan-banner h1,
+.main-nav,
+.logo {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+ul{
+ list-style: none;
+}
+a {
+ text-decoration: none;
+ color: inherit;
+}

@@ -1,0 +1,22 @@
+$thin-padding: 5px;
+$medium-padding: 10px;
+$thick-padding: 20px;
+$extra-thick-padding: 30px;
+
+$bold-font: 600;
+$normal-font: 400;
+$thin-font: 300;
+
+
+$app-color: rgba(255, 0, 0, 0.5); //red
+$primary-color: rgba(72,34,125,1); //purple
+$secondary-color: rgba(47,86,156,0.85);
+$grey-color: #bdc3c7;
+$warning-color: #e74c3c;
+
+$grey-background: tint($grey-color, 90%);
+$dark-grey-background: tint($grey-color, 70%);
+$light-grey-background: tint($grey-color, 98%);
+$secondary-background: tint($secondary-color, 95%);
+
+$light-border-color: tint($base-border-color, 60%);

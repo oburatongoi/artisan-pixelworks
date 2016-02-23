@@ -1,0 +1,99 @@
+a.logo-main  {
+  font-weight: 600;
+  font-size: 2.5em;
+  letter-spacing: -0.04em;
+  color: white;
+  text-shadow: 1px 1px 0.5px rgba(0,0,0,0.8);
+
+  span {
+    opacity: 0.3;
+    letter-spacing: 0.01em;
+    line-height: 1em;
+    margin: 0;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 1);
+    @include transition-duration(0.3s);
+  }
+
+  &:hover span {
+    opacity: 0.5;
+  }
+
+}
+p.logo-tagline {
+ margin: 0;
+ color: rgba(255, 255, 255, 0.5);
+ text-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.2);
+ font-size: 0.8em;
+ font-weight: 600;
+ letter-spacing: 0.5px;
+  a {
+     &:hover {
+       color: rgba(255, 255, 255, 1);
+     }
+  }
+}
+
+
+
+.main-nav {
+ padding: 0;
+  li {
+    display: inline-block;
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 0.8em;
+    color: rgba(153, 153, 153, 1);
+  }
+  a {
+    padding-bottom: 3px;
+  }
+  a:hover,
+  .selected a {
+    border-bottom: 3px solid rgba(255, 0, 0, 0.5);
+  }
+  .nav-link a {
+    color: rgba(255, 255, 255, 1);
+    text-shadow: 1px 1px 0.5px rgba(0,0,0,0.7);
+    opacity: 0.5;
+    @include transition-duration(0.3s);
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.nav-link-grey a {
+  color: rgba(153, 153, 153, 1);
+}
+
+
+#top-nav {
+  @include span-columns(12);
+  @include pad(5vh 2em 0);
+  .nav-left,
+  .nav-right {
+    @include span-columns(6, block-collapse);
+    // background: rgba(0,0,0,0.2);
+    // vertical-align: bottom;
+  }
+  .nav-left {
+    text-align: left;
+  }
+  .nav-right {
+    text-align: right;
+  }
+}
+
+.footer {
+  @include span-columns(12);
+  @include pad(1vh 2em 0);
+  background: rgba(0,0,0,0.3);
+  text-align: center;
+  position: relative;
+  .copyright {
+   font-size: 0.8em;
+   color: rgba(255, 255, 255, 1);
+   text-shadow: 1px 1px 0.5px rgba(0,0,0,0.7);
+  }
+}

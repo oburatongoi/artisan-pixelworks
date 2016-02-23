@@ -11,6 +11,22 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.sass('app.scss');
-});
+ elixir(function(mix) {
+     mix.sass([
+       'app.scss'
+     ], 'public/css');
+ });
+
+ elixir(function(mix) {
+     mix.scriptsIn('resources/assets/js', 'public/js/app.js');
+ });
+
+ elixir(function(mix) {
+     mix.version(['css/app.css', 'js/app.js']);
+ });
+
+ elixir(function(mix) {
+     mix.browserSync({
+         proxy: 'artisanpw.dev'
+     });
+ });
