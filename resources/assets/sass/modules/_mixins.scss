@@ -1,0 +1,34 @@
+@mixin font-weight($font-weight) {
+  font-weight: $font-weight;
+}
+@mixin logo-font() {
+  font-size: 1.8em;
+  font-size: 2.4em;
+  font-weight: 400;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+@mixin body-font() {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+}
+@mixin nav-font() {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1em;
+}
+@mixin title-font() {
+  @include margin(0);
+  font-size:1.2em;
+  color: shade($app-color, 2%);
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+}
+@mixin header-font() {
+  @include margin(0);
+  font-size:1.7em;
+  color: shade($app-color, 2%);
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+}
+@mixin normal-transition-speed() {
+  @include transition-duration(0.5s);
+}

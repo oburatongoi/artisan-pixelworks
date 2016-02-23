@@ -1,52 +1,13 @@
 <!-- views/projects/index.blade.php -->
 @extends('layouts.app')
 @section('header')
-  {{-- <div class="row">
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <div class="logo">
-          <a href="{!! url('/') !!}" class="logo-small"><span>Artisan</span>.pw</a>
-        </div>
-      </div>
-      <div class="top-bar-right">
-        <ul class="main-nav">
-          <li class="nav-link-grey selected"><a href="{!! url('work') !!}">My Work</a></li>
-          <li class="nav-link-grey"><a href="{!! url('contact') !!}">Contact Me</a></li>
-        </ul>
-      </div>
-    </div>
-  </div> --}}
-  <div class="" style="background: grey; background-image: url('img/cover-6.jpg'); background-position: center center; background-size: cover;">
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <div class="row tm-60">
-          <div class="logo small-12 columns">
-            <a href="{!! url('/') !!}" class="logo-main text-shadow"><span>Artisan</span><br>pixelworks</a>
-            <p class="logo-tagline">A Digital Strategy &amp; Creative Lab by <a href="{{ url('//:tongoi.com') }}" class="bold text-shadow duration">@oburatongoi</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="top-bar-right">
-        <ul class="main-nav small-12 small-centered columns text-center tm-60 bm-40">
-          <li class="nav-link-white"><a href="{{ url('philosophy') }}">My Philosophy</a></li>
-          <li class="nav-link-white selected"><a href="{{ url('work') }}">My Work</a></li>
-          <li class="nav-link-white"><a href="{{ url('contact') }}">Contact Me</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
+@include('pages.includes._main_nav')
 @endsection
 @section('content')
   <div class="row">
     <div class="small-12 columns artisan-banner">
       <h1>My Work</h1>
       <p>I'm skilled at HTML, CSS, JavaScript, PHP, Jquery &amp; MySQL, and willing to learn whatever it takes to build you the perfect website. Below is a sample of my work:</p>
-      {{-- <video id="bg-vid-inner" preload="true" src="{!! url('img/design.mov') !!}" preload="auto" autoplay loop muted>
-          <source src="design.mp4" type="video/mp4" >
-          <source src="design.ogv" type="video/ogv" >
-         <source src="design.webm" type="video/webm" >
-      </video> --}}
     </div>
   </div>
   <ul class="projects">
