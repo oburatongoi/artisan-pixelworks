@@ -1381,8 +1381,8 @@ p.logo-tagline {
     font-size: 1.5em;
     font-weight: 300;
     opacity: 1;
-    -webkit-animation: blink 0.9s infinite;
-    animation: blink 0.9s infinite; }
+    -webkit-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite; }
 
 #bg-img {
   position: fixed;
