@@ -1,5 +1,5 @@
 ## Artisan Pixelworks
-#### A digital strategy and creative lab by @oburatongoi
+#### A digital strategy and creative lab by Obura Tongoi
 
 A pixel, well placed, wields great power.
 Give each a purpose, and watch a website come alive&#8212;inviting curiosity, evoking emotion, and inspiring action; all as its natural self-expression.
