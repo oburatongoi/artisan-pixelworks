@@ -31,7 +31,7 @@
           typeSpeed: 0.8,
           startDelay: 0,
           backSpeed: 0.5,
-          backDelay: 2500,
+          backDelay: 2000,
         });
     });
   });
