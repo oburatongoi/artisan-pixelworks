@@ -20,7 +20,11 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-
+/*******************************************
+**                                        **
+**Thanks Matt! I back you on altruwist.com**
+**                                        **
+********************************************/
 
 
 ! function($) {
@@ -152,10 +156,10 @@
             // ------------- optional ------------- //
             // backpaces a certain string faster
             // ------------------------------------ //
-            // if (self.arrayPos == 1){
-            //  self.backDelay = 50;
-            // }
-            // else{ self.backDelay = 500; }
+            if (self.arrayPos == 0){
+             self.backDelay = 500;
+            }
+            else{ self.backDelay = 2000; }
 
             // contain typing function in a timeout humanize'd delay
             self.timeout = setTimeout(function() {
@@ -270,8 +274,12 @@
                 // on the first string, only delete one word
                 // the stopNum actually represents the amount of chars to
                 // keep in the current string. In my case it's 14.
-                if (self.arrayPos == 0 || self.arrayPos == 1){
-                 self.stopNum = 55;
+                if (self.arrayPos == 1 || self.arrayPos == 2){
+                //  self.stopNum = 55;
+                 self.stopNum = 43;
+                }
+                else if (self.arrayPos == 0) {
+                  self.stopNum = 3;
                 }
                 // every other time, delete the whole typed string
                 else{
@@ -396,14 +404,14 @@
     };
 
     $.fn.typed.defaults = {
-        strings: ["Let's modernize your online presence<br> and grow your audience.","Let's modernize your online presence<br> and grow your revenue.", "Let's modernize your online presence<br> and grow your brand."],
+        strings: ["Let's modernize your online presence<br> and engage your audience.","Let's modernize your online presence<br> and grow your revenue.", "Let's modernize your online presence<br> and boost your brand."],
         stringsElement: null,
         // typing speed
         typeSpeed: 0.8,
         // time before typing starts
         startDelay: 0,
         // backspacing speed
-        backSpeed: 0,
+        backSpeed: 0.1,
         // shuffle the strings
         shuffle: false,
         // time before backspacing
@@ -432,3 +440,15 @@
 
 
 }(window.jQuery);
+
+$( document ).ready(function() {
+  $(function(){
+      $(".type-me").typed({
+        strings: ["Lets modernize","Let's modernize your online presence<br> and engage your audience.","Let's modernize your online presence<br> and grow your revenue.", "Let's modernize your online presence<br> and boost your brand."],
+        typeSpeed: 0.8,
+        startDelay: 3200,
+        backSpeed: 0,
+        backDelay: 2000,
+      });
+  });
+});
