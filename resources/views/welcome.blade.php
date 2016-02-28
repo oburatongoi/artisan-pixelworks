@@ -3,18 +3,18 @@
   @include('pages.includes._main_nav')
 @endsection
 @section('content')
-  {{-- <div id="particles-js"></div> --}}
   <div class="welcome-banner">
     <div class="welcome-text text-shadow">
-      {{-- <p><span class="type-me">Let's modernize your online presence<br> and grow your audience.</span></p> --}}
-      <p><span class="type-me">I create products that thrive on the web.</span></p>
+      <p class="tagline"><span class="type-me">I create products that thrive on the web.</span></p>
+      <p class="action-button">
+        <a href="/hire">Hire Me</a>
+      </p>
     </div>
-    <div id="bg-img" style="background: linear-gradient(-110deg, rgba(72,34,125,0.85) 0%, rgba(47,86,156,0.85) 100%), url('img/welcome.jpeg'); background-repeat: no-repeat, no-repeat; background-position: center, center; background-size: cover;">
-    </div>
+    <div id="bg-img"></div>
   </div>
 @endsection
 @section('footer')
-  <div class="footer">
+  <div class="footer fixed-footer">
     <p class="copyright">&copy; {!! date('Y') !!} artisan.pw  All rights reserved.</p>
   </div>
 @endsection

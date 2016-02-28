@@ -1,11 +1,12 @@
 // All mixins and global project variables
 
+@import "_animations";
 @import "_datepicker";
-@import "_pikaday";
-@import "_header";
 @import "_d3but";
-@import "_previews";
+@import "_header";
 @import "_pages";
+@import "_pikaday";
+@import "_previews";
 
 html,
 body {
@@ -40,6 +41,11 @@ body {
    font-size: 0.8em;
    color: rgba(255, 255, 255, 1);
    text-shadow: 1px 1px 0.5px rgba(0,0,0,0.7);
+  }
+  &.fixed-footer {
+    position: absolute;
+    bottom: 0;
+    background: none !important;
   }
 }
 

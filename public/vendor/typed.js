@@ -150,7 +150,8 @@
 
             // varying values for setTimeout during typing
             // can't be global since number changes each time loop is executed
-            var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
+            // var humanize = Math.round(Math.random() * (100 - 30)) + this.typeSpeed;
+            var humanize = Math.round(Math.random() * (100 - 10)) + this.typeSpeed;
             var self = this;
 
             // ------------- optional ------------- //
@@ -273,10 +274,10 @@
                 // check string array position
                 // on the first string, only delete one word
                 // the stopNum actually represents the amount of chars to
-                // keep in the current string. In my case it's 14.
+                // keep in the current string.
                 if (self.arrayPos == 1 || self.arrayPos == 2){
-                //  self.stopNum = 55;
-                 self.stopNum = 43;
+                //  self.stopNum = 43;
+                 self.stopNum = 31;
                 }
                 else if (self.arrayPos == 0) {
                   self.stopNum = 3;
@@ -404,14 +405,14 @@
     };
 
     $.fn.typed.defaults = {
-        strings: ["Let's modernize your online presence<br> and engage your audience.","Let's modernize your online presence<br> and grow your revenue.", "Let's modernize your online presence<br> and boost your brand."],
+        strings: ["Let's create a website<br> that engages your audience.","Let's create a website<br> that grows your revenue.", "Let's create a website<br> that boosts your brand."],
         stringsElement: null,
         // typing speed
-        typeSpeed: 0.8,
+        typeSpeed: 0,
         // time before typing starts
         startDelay: 0,
         // backspacing speed
-        backSpeed: 0.1,
+        backSpeed: 0,
         // shuffle the strings
         shuffle: false,
         // time before backspacing
@@ -444,8 +445,8 @@
 $( document ).ready(function() {
   $(function(){
       $(".type-me").typed({
-        strings: ["Lets modernize","Let's modernize your online presence<br> and engage your audience.","Let's modernize your online presence<br> and grow your revenue.", "Let's modernize your online presence<br> and boost your brand."],
-        typeSpeed: 0.8,
+        strings: ["Lets create a","Let's create a website<br> that engages your audience.","Let's create a website<br> that grows your revenue.", "Let's create a website<br> that boosts your brand."],
+        typeSpeed: 0,
         startDelay: 3200,
         backSpeed: 0,
         backDelay: 2000,
