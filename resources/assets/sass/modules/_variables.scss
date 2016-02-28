@@ -20,3 +20,12 @@ $light-grey-background: tint($grey-color, 98%);
 $secondary-background: tint($secondary-color, 95%);
 
 $light-border-color: tint($base-border-color, 60%);
+
+// media queries
+$mobile-landscape: new-breakpoint(min-width 20.0625em); // 321px
+$tablet: new-breakpoint(min-width 48.0625em); // 769px
+$tablet-landscape: new-breakpoint(min-width 64.0625em); // 1025px
+$desktop: new-breakpoint(min-width 76.0625em); // 1225px
+$desktop-lg: new-breakpoint(min-width 114.0625em); // 1825px
+
+$white-border: 1px solid rgba(255,255,255,0.3);
