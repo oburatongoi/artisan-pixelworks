@@ -20,6 +20,9 @@ Route::get('work', function () {
 Route::get('contact', function () {
     return view('pages.contact');
 });
+Route::get('hire', function () {
+    return view('pages.contact');
+});
 Route::get('philosophy', function () {
     return view('pages.philosophy');
 });

@@ -1,12 +1,12 @@
 .welcome-banner {
   @include span-columns(12);
-  @include pad(15% 0 0);
+  @include pad(15% 0.1em 0);
   @include media($tablet) {
    @include pad(15% 0.5em 0);
   }
   .welcome-text {
     @include fill-parent()
-    p {
+    p.tagline {
       color: white;
       font-size: 0.9em;
       font-weight: 300;
@@ -17,7 +17,7 @@
        font-size: 1.6em;
       }
     }
-    .typed-cursor{
+    .typed-cursor {
         color: tint($primary-color,50%);
         vertical-align: middle;
         font-size: 1.5em;
@@ -27,10 +27,37 @@
         -moz-animation: blink 0.7s infinite;
         animation: blink 0.7s infinite;
     }
+    p.action-button {
+      text-align: center;
+      font-size: 0.8em;
+      color: rgba(255,255,255,0.7);
+      text-shadow: none;
+      font-weight: 600;
+      a {
+        display: inline-block;
+        @include pad(0.1em 0.8em);
+        background: rgba(255,255,255,0.1);
+        @include border-top-radius(3px);
+        @include border-bottom-radius(3px);
+        @include transition-duration(0.3s);
+        -webkit-animation: breathe 4s infinite;
+        -moz-animation: breathe 4s infinite;
+        animation: breathe 4s infinite;
+        &:hover {
+          -webkit-animation: 0;
+          -moz-animation: 0;
+          animation: 0;
+          background: white;
+          background: rgba(255,255,255,0.3);
+          color: $secondary-color;
+          color: rgba(255,255,255,1);
+        }
+      }
+    }
   }
 }
 #bg-img {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -42,7 +69,9 @@
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    /*background-color: rgba(255, 0, 0, 0.1);*/
+
+    background: linear-gradient(-110deg, rgba(72,34,125,0.85) 0%, rgba(47,86,156,0.85) 100%), url('/img/welcome.jpeg'); background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
     background-size: cover;
 }
 #bg-dark {
@@ -92,20 +121,4 @@ width:100%;
 }
 .text-shadow-light {
   text-shadow: 1px 1px 0.5px rgba(255,255,255,0.8);
-}
-
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-}
-@-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
 }
