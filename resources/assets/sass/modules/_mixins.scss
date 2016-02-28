@@ -32,3 +32,17 @@
 @mixin normal-transition-speed() {
   @include transition-duration(0.5s);
 }
+@mixin mobile-button(){
+  border: $white-border;
+  @include pad(0.3em 0.5em);
+  @include border-top-radius(0.2em);
+  @include border-bottom-radius(0.2em);
+  background: rgba(0,0,0,0.2);
+  @include media($tablet) {
+    border: 0;
+    @include pad(0);
+    @include border-top-radius(0);
+    @include border-bottom-radius(0);
+    background: none;
+  }
+}

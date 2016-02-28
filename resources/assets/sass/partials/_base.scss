@@ -30,11 +30,25 @@ body {
   position: relative;
 }
 
+.footer {
+  @include span-columns(12);
+  @include pad(1vh 2em 0);
+  background: rgba(0,0,0,0.3);
+  text-align: center;
+  position: relative;
+  .copyright {
+   font-size: 0.8em;
+   color: rgba(255, 255, 255, 1);
+   text-shadow: 1px 1px 0.5px rgba(0,0,0,0.7);
+  }
+}
+
 body {
   font-family: 'Josefin Slab', serif;
   font-size: 1.5em;
   line-height: 1.5em;
 }
+.welcome-text p,
 .artisan-banner h1,
 .main-nav,
 .logo {
