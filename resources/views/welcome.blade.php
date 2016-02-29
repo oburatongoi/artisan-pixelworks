@@ -4,14 +4,14 @@
 @endsection
 @section('content')
   <div class="welcome-banner">
-    <div class="welcome-text text-shadow">
+    <div class="welcome-text">
       <p class="tagline"><span class="type-me">I create products that thrive on the web.</span></p>
       <p class="action-button">
         <a href="/hire">Hire Me</a>
       </p>
     </div>
-    <div id="bg-img"></div>
   </div>
+  <div id="welcome-background"></div>
 @endsection
 @section('footer')
   <div class="footer fixed-footer">
