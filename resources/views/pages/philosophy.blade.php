@@ -14,7 +14,7 @@
   <div id="philosophy-background"></div>
 @endsection
 @section('footer')
-  <div class="footer fixed-footer">
+  <div class="footer">
     <p class="copyright">&copy; {!! date('Y') !!} artisan.pw  All rights reserved.</p>
   </div>
 @endsection
