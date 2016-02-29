@@ -47,7 +47,7 @@
   }
 }
 @mixin background-element(){
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   min-width: 100%;

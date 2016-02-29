@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>{{{ $title or 'Artisan PixelWorks'}}}</title>
   <link href='{!! url('https://fonts.googleapis.com/css?family=Rajdhani:300') !!}' rel='stylesheet' type='text/css'>
-  {{-- <link href='{!! url('//fonts.googleapis.com/css?family=Josefin+Slab:400,600') !!}' rel='stylesheet' type='text/css'> --}}
   <link href='{!! url('https://fonts.googleapis.com/css?family=Josefin+Sans:300') !!}' rel='stylesheet' type='text/css'>
   <link href='{!! asset('css/app.css') !!}' rel="stylesheet" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
